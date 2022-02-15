@@ -1,0 +1,108 @@
+/* core */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Permanent Marker', cursive;
+    min-height: 100%;
+    position: relative;
+}
+body{
+    background-color: #1E1E24;
+    color: #FFF;
+    margin-bottom: 100px;
+}
+
+/* headder */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #321718;
+    height: 8rem;
+}
+header .title{
+    color: #F9F871;
+    font-size: 3em;
+}
+
+/* main */
+main{
+    text-align: center;
+    padding-top: 3rem;
+}
+main span{
+    font-size: 5.33em;
+}
+
+/* .game-board */
+.game-board #round{
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+.game-board img{
+    height: 7.5rem;
+    width: auto;
+}
+.game-board .score-board{
+    display: flex;
+    justify-content: space-evenly;
+}
+.game-board .select-pick{
+    margin-top: 3rem;
+}
+.game-board .select-pick img{
+    background-color: #313247;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: solid 5px transparent;
+}
+.game-board .select-pick img:hover{
+    cursor: pointer;
+    background-color: #C0C0C8;
+    border-color: #313247;
+}
+.game-board .select-pick #paper{
+    margin: 0 2rem;
+}
+.game-board .select-pick p{
+    font-size: 1.5em;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+@media (max-width: 550px) {
+    /* header */
+    header .title{
+        font-size: 2.5em;
+    }
+    /* main */
+    main span{
+        font-size: 4.33em;
+    }
+    /* .game-board */
+    .game-board #message{
+        font-size: 1.2em;
+    }
+    .game-board img{
+        height: 6rem;
+    }
+    .game-board .select-pick p{
+        font-size: 1.3em;
+    }
+}
