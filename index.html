@@ -9,17 +9,42 @@
 </head>
 <body>
     <header>
-
+        <h1 class="title">Rock Paper Scissors</h1>
     </header>
     <main>
-        <section>
-            <article>
-
-            </article>
-        </section>
+        <!-- game board -->
+        <div class="game-board">
+            <!-- game round -->
+            <h2 id="message">First to score 5 points wins the game</h2>
+            <h2 id="round">Round 0</h2>
+            <!-- score-board -->
+            <div class="score-board">
+                <!-- player's board -->
+                <div class="player-board">
+                    <div class="player-picked">
+                        <span> &quest; </span>
+                    </div>
+                    <h3 id="player-score">Player's score: 0</h3>
+                </div>
+                <!-- opponent's board -->
+                <div class="opponent-board">
+                    <div class="opponent-picked">
+                        <span> &quest; </span>
+                    </div>
+                    <h3 id="opponent-score">Opponent's score: 0</h3>
+                </div>
+            </div>
+            <!-- select play/pick -->
+            <div class="select-pick">
+                <img id="rock" src="images/rock.png" alt="rock">
+                <img id="paper" src="images/paper.png" alt="paper">
+                <img id="scissors" src="images/scissors.png" alt="scissors">
+                <p>Select your pick</p>
+            </div>
+        </div>
     </main>
     <footer>
-
+        &copy; 2022
     </footer>
     <script src="scripts/script.js"></script>
 </body>
