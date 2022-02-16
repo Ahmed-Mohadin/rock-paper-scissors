@@ -41,6 +41,9 @@ main span{
 }
 
 /* .game-board */
+.blur{
+    filter: blur(3px);
+}
 .game-board #round{
     margin-top: 0.5rem;
     margin-bottom: 2.5rem;
@@ -74,6 +77,43 @@ main span{
     font-size: 1.5em;
 }
 
+/* .overlay */
+.overlay{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #1E1E24;
+    width: 18rem;
+    height: 16rem;
+    border-radius: 1rem;
+    border: solid 5px #321718;
+    display: none;
+}
+.overlay h3{
+    margin-top: 1rem;
+    font-size: 1.8em;
+}
+.overlay button{
+    padding: 0.45rem 2rem;
+    background-color: #313247;
+    border-radius: 0.5rem;
+    border: solid 3px transparent;
+    color: #FFF;
+    margin-top: 1.5rem;
+    font-size: 1.3em;
+}
+.overlay button:hover{
+    cursor: pointer;
+    background-color: #C0C0C8;
+    border-color: #313247;
+    color: #000;
+}
+.active{
+    display: block;
+}
+
 /* footer */
 footer{
     position: absolute;
@@ -103,6 +143,20 @@ footer{
         height: 6rem;
     }
     .game-board .select-pick p{
+        font-size: 1.3em;
+    }
+    /* .overlay */
+    .overlay{
+        width: 18rem;
+        height: 16rem;
+    }
+    .overlay h3{
+        margin-top: 1rem;
+        font-size: 1.8em;
+    }
+    .overlay button{
+        padding: 0.45rem 2rem;
+        margin-top: 1.5rem;
         font-size: 1.3em;
     }
 }
