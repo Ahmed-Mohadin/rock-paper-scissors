@@ -124,6 +124,15 @@ footer{
     justify-content: center;
     align-items: center;
 }
+footer a{
+    text-decoration: none;
+    color: #FFF;
+    border: solid 0.3rem transparent;
+}
+footer a:hover{
+    color: #F9F871;
+    border-bottom-color: #F9F871;
+}
 
 /* media queries */
 @media (max-width: 550px) {
