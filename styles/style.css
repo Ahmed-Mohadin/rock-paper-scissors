@@ -129,7 +129,7 @@ footer{
 @media (max-width: 550px) {
     /* header */
     header .title{
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     /* main */
     main span{
@@ -137,13 +137,17 @@ footer{
     }
     /* .game-board */
     .game-board #message{
-        font-size: 1.2em;
+        font-size: 0.95em;
     }
     .game-board img{
         height: 4.5rem;
     }
     .game-board .select-pick p{
         font-size: 1em;
+    }
+    /* .score-baoard */
+    .score-board h3{
+        font-size: 0.8em;
     }
     /* .overlay */
     .overlay{
